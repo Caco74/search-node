@@ -71,7 +71,7 @@ $("#rangoPrecio").ionRangeSlider({
       {
           html += `<div class="card horizontal">
                   <div class="card-image">
-                      <img src="http://localhost:3000/img/home.jpg">
+                      <img src="https://caco74.github.io/search-node/public/img/home.jpg">
                   </div>
                   <div class="card-stacked">
                       <div class="card-content">
@@ -90,7 +90,7 @@ $("#rangoPrecio").ionRangeSlider({
 
   function init(){
       $.ajax({
-          url: 'http://localhost:3000/filteroptions',
+          url: 'https://caco74.github.io/search-node/public/index.html/filteroptions',
           type: 'get',
           dataType: 'json'
       })
