@@ -2,8 +2,9 @@
   "name": "search-node",
   "version": "1.0.0",
   "description": "Evaluación Final - Backend",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
+    "start": "nodemon server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Caco74/search-node/issues"
   },
-  "homepage": "https://github.com/Caco74/search-node#readme"
+  "homepage": "https://github.com/Caco74/search-node#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "path": "^0.12.7"
+  }
 }
