@@ -26,22 +26,22 @@ $("#rangoPrecio").ionRangeSlider({
 
       if($("#ciudad").val() === '' && $('#tipo').val() != '') {
         console.log('ciudad GET');
-        var urls = `http://localhost:3000/ciudad/tipo/${$("#tipo").val()}/desde/${valores[0]}/hasta/${valores[1]}`;
+        var urls = `https://caco74.github.io/search-node/public/index.html/ciudad/tipo/${$("#tipo").val()}/desde/${valores[0]}/hasta/${valores[1]}`;
       } 
       else if ($('#tipo').val() === '' && $("#ciudad").val() != '') {
         console.log('tipo GET');
-        var urls = `http://localhost:3000/ciudad/${$("#ciudad").val()}/tipo/desde/${valores[0]}/hasta/${valores[1]}`;
+        var urls = `https://caco74.github.io/search-node/public/index.html/ciudad/${$("#ciudad").val()}/tipo/desde/${valores[0]}/hasta/${valores[1]}`;
       } 
       else if ($("#ciudad").val() === '' && $('#tipo').val() === '') {
         console.log('todo GET');
-        var urls = `http://localhost:3000/ciudad/tipo/desde/${valores[0]}/hasta/${valores[1]}`;
+        var urls = `https://caco74.github.io/search-node/public/index.html/ciudad/tipo/desde/${valores[0]}/hasta/${valores[1]}`;
       }
       else {
         console.log('Error!');
       }
       
     } else {
-      var urls = 'http://localhost:3000/search'
+      var urls = 'https://caco74.github.io/search-node/public/index.html/search'
     }
     $.ajax({
       url: urls,
