@@ -26,22 +26,22 @@ $("#rangoPrecio").ionRangeSlider({
 
       if($("#ciudad").val() === '' && $('#tipo').val() != '') {
         console.log('ciudad GET');
-        var urls = `https://caco74.github.io/search-node/public/index.html/ciudad/tipo/${$("#tipo").val()}/desde/${valores[0]}/hasta/${valores[1]}`;
+        var urls = `https://caco74.github.io/search-node/ciudad/tipo/${$("#tipo").val()}/desde/${valores[0]}/hasta/${valores[1]}`;
       } 
       else if ($('#tipo').val() === '' && $("#ciudad").val() != '') {
         console.log('tipo GET');
-        var urls = `https://caco74.github.io/search-node/public/index.html/ciudad/${$("#ciudad").val()}/tipo/desde/${valores[0]}/hasta/${valores[1]}`;
+        var urls = `https://caco74.github.io/search-node/ciudad/${$("#ciudad").val()}/tipo/desde/${valores[0]}/hasta/${valores[1]}`;
       } 
       else if ($("#ciudad").val() === '' && $('#tipo').val() === '') {
         console.log('todo GET');
-        var urls = `https://caco74.github.io/search-node/public/index.html/ciudad/tipo/desde/${valores[0]}/hasta/${valores[1]}`;
+        var urls = `https://caco74.github.io/search-node/ciudad/tipo/desde/${valores[0]}/hasta/${valores[1]}`;
       }
       else {
         console.log('Error!');
       }
       
     } else {
-      var urls = 'https://caco74.github.io/search-node/public/index.html/search'
+      var urls = 'https://caco74.github.io/search-node/search'
     }
     $.ajax({
       url: urls,
@@ -90,7 +90,7 @@ $("#rangoPrecio").ionRangeSlider({
 
   function init(){
       $.ajax({
-          url: 'https://caco74.github.io/search-node/public/index.html/filteroptions',
+          url: 'https://caco74.github.io/search-node/filteroptions',
           type: 'get',
           dataType: 'json'
       })
